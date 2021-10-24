@@ -5,11 +5,11 @@ import Navigation from '../components/navigation';
 
 export default function Home() {
   return (
-    <body className="antialiased bg-body text-body font-body">
+    <body className="h-screen flex flex-col justify-between antialiased bg-body text-body font-body">
       <Meta title="404" />
       <Navigation/>
 
-      <main>
+      <main className="flex flex-col flex-grow justify-center">
         <section className="py-20">
           <div className="container px-4 mx-auto">
             <div className="mb-16 text-center">
