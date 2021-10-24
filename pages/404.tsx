@@ -5,7 +5,7 @@ import Navigation from '../components/navigation';
 
 export default function Home() {
   return (
-    <body classNameName="antialiased bg-body text-body font-body">
+    <body className="antialiased bg-body text-body font-body">
       <Meta title="404" />
       <Navigation/>
 

@@ -15,7 +15,7 @@ const Meta = ({ title }: Props) => {
       <meta name="description" content={PRODUCT_DESCRIPTION}/>
       <meta name="author" content="Leo van Haaren"/>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.gstatic.com" data-crossorigin />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400|Sen:400,700|DM+Sans:300,500,700&amp;subset=latin"/>
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
       <link rel="icon" href="/favicon.ico" />
