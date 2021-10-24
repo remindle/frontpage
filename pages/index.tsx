@@ -13,7 +13,7 @@ export default function Home() {
         <section className="relative py-20 overflow-hidden">
           <div className="hidden lg:block absolute bottom-0 right-0">
             <img className="w-full mr-40 -mb-40 opacity-90" src="backgrounds/secondary-circle-fade.svg" alt="circle"/>
-            <img className="w-72 ml-auto opacity-10" src="backgrounds/primary-blob.svg" alt="blob"/>
+            <img className="w-72 ml-auto opacity-30" src="backgrounds/primary-blob.svg" alt="blob"/>
           </div>
           <div className="relative container px-4 mx-auto">
             <div className="relative flex flex-wrap items-center -mx-4">
