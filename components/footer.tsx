@@ -1,3 +1,5 @@
+import { Email } from 'react-obfuscate-email';
+
 import Link from './link';
 import Logo from './logo';
 
@@ -7,8 +9,8 @@ type Props = {
 
 const Footer = ({ }: Props) => {
   return (
-    <footer className="py-12 lg:py-20">
-      <div className="container mx-auto px-4 mb-12 md:mb-20">
+    <footer className="py-8">
+      <div className="container mx-auto px-4 mb-5 md:mb-20">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full lg:w-1/3 px-4 mb-6 lg:mb-0">
             <Logo/>
@@ -36,7 +38,6 @@ const Footer = ({ }: Props) => {
                 <ul className="text-sm">
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/login">Login</Link></li>
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/register">Register</Link></li>
-                  <li><Link className="text-gray-500 hover:text-gray-600" href="/contact">Contact</Link></li>
                 </ul>
               </div>
               <div className="w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0">
@@ -51,6 +52,15 @@ const Footer = ({ }: Props) => {
                 <ul className="text-sm">
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="https://docs.remindle.io">Docs</Link></li>
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="https://rds.remindle.io">Design System</Link></li>
+                </ul>
+              </div>
+              <div className="w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0">
+                <h3 className="mb-6 text-base font-medium">Contact us</h3>
+                <ul className="text-sm">
+                  <li className="mb-6">
+                    <p className="mb-4">Email</p>
+                    <Email className="underline text-gray-500 hover:text-gray-600" email="hello@remindle.io"/>
+                  </li>
                 </ul>
               </div>
             </div>
