@@ -29,9 +29,9 @@ module.exports = {
         },
 
         tetriary: {
-          light: '#244A9E',
-          DEFAULT: '#062C80',
-          dark: '#000E62',
+          light: '#221E6B',
+          DEFAULT: '#04004D',
+          dark: '#00002F',
         },
 
         dark: {

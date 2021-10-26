@@ -17,11 +17,14 @@
     "typescript": "^4.4.4"
   },
   "devDependencies": {
+    "@remindle/design-system": "^1.0.0",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.4",
     "@types/react": "^17.0.32",
     "@types/react-dom": "^17.0.10",
     "autoprefixer": "^10.2.6",
+    "next-transpile-modules": "^8.0.0",
+    "polished": "^4.1.3",
     "postcss": "^8.3.5",
     "react-obfuscate-email": "^1.0.12",
     "tailwindcss": "^2.2.4",
