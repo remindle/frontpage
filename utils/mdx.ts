@@ -3,8 +3,6 @@ import matter from 'gray-matter';
 import { bundleMDX } from 'mdx-bundler';
 import path from 'path';
 
-import { Post } from '../pages/blog';
-
 export const ROOT = process.cwd();
 export const POSTS_PATH = path.join(process.cwd(), "content/posts");
 
@@ -62,6 +60,7 @@ export const getSinglePost = async (slug: string) => {
     code,
   };
 };
+
 export const getAllPosts = () => {
   return fs
     .readdirSync(POSTS_PATH)

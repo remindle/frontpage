@@ -3,17 +3,17 @@ import React from 'react';
 
 import { getAllPosts, getSinglePost } from '../../utils/mdx';
 
-const Post = ({ code, frontmatter }) => {
+const Post = ({ code, frontmatter }: any) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
 
   return (
-    <div className={styles.container}>
+    <div>
       <Component />
     </div>
   );
 };
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params }: any) => {
   const post = await getSinglePost(params.slug);
   return {
     props: { ...post },
