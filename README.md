@@ -1,29 +1,27 @@
-# Next.js + Tailwind CSS Example
+# frontpage
+![Release](https://github.com/remindle/design-system/actions/workflows/release.yml/badge.svg)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Tech used
+Building components
+- ⚛️ [React](https://reactjs.org/) declarative component-centric UI
+- ⚛️ [NextJS](https://nextjs.org/) react framework for production
+- ⚛️ [Remindle Design System](https://github.com/remindle/design-system) single source of truth which groups all the elements to design, realize and develop Remindle
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+Maintaining the package
+- 🚥 [GitHub Actions](https://github.com/remindle/frontpage/actions) Continuous integration
 
-## Preview
+## Installing dependencies
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+All dependencies are publicly available.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+**Remindle** uses GitHub's package registry to publish packages, and this project uses both `@remindle/design-tokens` and `@remindle/design-system` packages.
+The benefit of this approach is that the code, and the published package are all at one place instead of keeping code and published package separately.
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+To install dependencies from ***GitHub*** registry you'll have to configure `.npmrc` with the following content
+(you are safe to create `.npmrc` in project folder since it's ignored in `.gitignore`):
+```
+//npm.pkg.github.com/:_authToken=<auth_token>
+@remindle:registry=https://npm.pkg.github.com
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Note that you'll have to replace `<auth-token>` with your personal token, for more info [see the docs](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
