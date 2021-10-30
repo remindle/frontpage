@@ -1,7 +1,5 @@
 import { Button } from '@remindle/design-system';
 
-import Link from './link';
-
 type Props = {
   //
 }

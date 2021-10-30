@@ -10,3 +10,6 @@ sh:
 add-dev:
 	@read -p "Enter package name:" package; \
 	docker-compose exec frontpage yarn add $$package --dev
+
+exec:
+	docker-compose exec frontpage $1

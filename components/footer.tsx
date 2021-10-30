@@ -36,6 +36,7 @@ const Footer = ({ }: Props) => {
               <div className="w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0">
                 <h3 className="mb-6 text-base font-medium">Pages</h3>
                 <ul className="text-sm">
+                  <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/blog">Blog</Link></li>
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/login">Login</Link></li>
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/register">Register</Link></li>
                 </ul>
@@ -67,7 +68,7 @@ const Footer = ({ }: Props) => {
           </div>
         </div>
       </div>
-      <p className="text-center text-sm text-gray-500 pt-8 px-4 border-t">All rights reserved © Remindle 2021</p>
+      <p className="text-center text-sm text-gray-500 pt-8 px-4 border-t">All rights reserved © Remindle { new Date().getFullYear() }</p>
     </footer>
   )
 }

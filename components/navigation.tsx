@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { useState } from 'react';
 
+import Link from '../components/link';
 import Logo from './logo';
 
 type Props = {
@@ -26,23 +26,15 @@ const Navigation = ({ }: Props) => {
             </div>
             <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:w-auto lg:space-x-12">
               <li>
-                <Link href="about">
-                  <a className="text-sm font-medium">About</a>
-                </Link>
+                <Link href="/blog" className="text-sm font-medium">Blog</Link>
               </li>
               <li>
-                <Link href="https://docs.remindle.io">
-                  <a className="text-sm font-medium">Docs</a>
-                </Link>
-                </li>
+                <Link href="https://docs.remindle.io" className="text-sm font-medium">Docs</Link>
+              </li>
             </ul>
             <div className="hidden lg:block">
-              <Link href="/login">
-                <a className="inline-block mr-2 py-3 px-8 text-sm leading-normal rounded border font-medium">Log in</a>
-              </Link>
-              <Link href="/register">
-                <a className="inline-block py-3 px-8 text-sm text-white font-medium leading-normal bg-primary hover:bg-secondary rounded transition duration-200">Sign Up</a>
-              </Link>
+              <Link href="/login" className="inline-block mr-2 py-3 px-8 text-sm leading-normal rounded border font-medium">Log in</Link>
+              <Link href="/register" className="inline-block py-3 px-8 text-sm text-white font-medium leading-normal bg-primary hover:bg-secondary rounded transition duration-200">Sign Up</Link>
               </div>
           </div>
         </nav>
@@ -59,16 +51,16 @@ const Navigation = ({ }: Props) => {
           </div>
           <div>
             <ul>
-              <li className="mb-1"><a className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="https://remindle.io/about">About</a></li>
-              <li className="mb-1"><a className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="https://docs.remindle.io">Docs</a></li>
+              <li className="mb-1"><Link className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="https://remindle.io/about">Blog</Link></li>
+              <li className="mb-1"><Link className="block p-4 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded" href="https://docs.remindle.io">Docs</Link></li>
             </ul>
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-              <a className="block mb-2 py-3 text-sm text-center leading-normal rounded border font-medium" href="https://remindle.io/login">Log in</a>
-              <a className="block py-3 text-sm text-center text-white leading-normal rounded bg-primary hover:bg-secondary font-medium transition duration-200" href="#">Sign Up</a>
+              <Link className="block mb-2 py-3 text-sm text-center leading-normal rounded border font-medium" href="/login">Log in</Link>
+              <Link className="block py-3 text-sm text-center text-white leading-normal rounded bg-primary hover:bg-secondary font-medium transition duration-200" href="/register">Sign Up</Link>
               </div>
-            <p className="mt-6 mb-4 text-sm text-center text-gray-500"><span>© 2021 All rights reserved.</span></p>
+            <p className="mt-6 mb-4 text-sm text-center text-gray-500"><span>© { new Date().getFullYear() } All rights reserved.</span></p>
           </div>
         </nav>
       </div>
