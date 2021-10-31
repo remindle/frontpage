@@ -33,8 +33,8 @@ const Navigation = ({ }: Props) => {
               </li>
             </ul>
             <div className="hidden lg:block">
-              <Link href="/login" className="inline-block mr-2 py-3 px-8 text-sm leading-normal rounded border font-medium">Log in</Link>
-              <Link href="/register" className="inline-block py-3 px-8 text-sm text-white font-medium leading-normal bg-primary hover:bg-secondary rounded transition duration-200">Sign Up</Link>
+              <Link href="https://platform.remindle.io/login" className="inline-block mr-2 py-3 px-8 text-sm leading-normal rounded border font-medium">Log in</Link>
+              <Link href="https://platform.remindle.io/register" className="inline-block py-3 px-8 text-sm text-white font-medium leading-normal bg-primary hover:bg-secondary rounded transition duration-200">Sign Up</Link>
               </div>
           </div>
         </nav>
@@ -57,8 +57,8 @@ const Navigation = ({ }: Props) => {
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-              <Link className="block mb-2 py-3 text-sm text-center leading-normal rounded border font-medium" href="/login">Log in</Link>
-              <Link className="block py-3 text-sm text-center text-white leading-normal rounded bg-primary hover:bg-secondary font-medium transition duration-200" href="/register">Sign Up</Link>
+              <Link className="block mb-2 py-3 text-sm text-center leading-normal rounded border font-medium" href="https://platform.remindle.io/login">Log in</Link>
+              <Link className="block py-3 text-sm text-center text-white leading-normal rounded bg-primary hover:bg-secondary font-medium transition duration-200" href="https://platform.remindle.io/register">Sign Up</Link>
               </div>
             <p className="mt-6 mb-4 text-sm text-center text-gray-500"><span>© { new Date().getFullYear() } All rights reserved.</span></p>
           </div>

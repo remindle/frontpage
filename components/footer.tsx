@@ -37,8 +37,8 @@ const Footer = ({ }: Props) => {
                 <h3 className="mb-6 text-base font-medium">Pages</h3>
                 <ul className="text-sm">
                   <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/blog">Blog</Link></li>
-                  <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/login">Login</Link></li>
-                  <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="/register">Register</Link></li>
+                  <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="https://platform.remindle.io/login">Login</Link></li>
+                  <li className="mb-4"><Link className="text-gray-500 hover:text-gray-600" href="https://platform.remindle.io/register">Register</Link></li>
                 </ul>
               </div>
               <div className="w-1/2 lg:w-1/4 px-4 mb-8 lg:mb-0">
