@@ -31,10 +31,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content={THEME_COLOR} />
         </Head>
         <body className="h-screen flex flex-col justify-between antialiased bg-body text-body font-body">
-          <Navigation />
-          <main className="flex flex-col flex-grow justify-center">
-            <Main />
-          </main>
+          <Main />
           <Footer />
           <NextScript />
         </body>
